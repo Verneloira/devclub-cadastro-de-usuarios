@@ -19,7 +19,7 @@ function Home() {
   const inputEmail = useRef()
 
   async function registerNewUser() {
-    await api.post('/usuários', {
+    await api.post('/usuarios', {
       email: inputEmail.current.value,
       name: inputName.current.value,
       age:  parseInt (inputAge.current.value)
